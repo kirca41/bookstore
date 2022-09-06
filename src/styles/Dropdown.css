@@ -1,0 +1,48 @@
+/*Colors: 
+#629D2A - lighter green
+#579141 - darker green
+#4A4A4A - dark
+#AABFBB - greyish
+#9ABF75 - very light green
+#F4F4F4 - almost white 
+Fonts: font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    background-color: #F4F4F4;
+}
+
+.dropdown-label {
+    font-weight: 600;
+}
+
+.dropdown-selected {
+    text-transform: capitalize;
+}
+ /*might be temporary*/
+.dropdown {
+    color: #4A4A4A;
+    cursor: pointer;
+}
+
+.dropdown-field {
+    background-color: #AABFBB;
+    padding: 0.3em;
+}
+
+.fas.fa-caret-down {
+    float: right;
+    margin-right: 0.4em;
+}
+
+.dropdown-hide {
+    display: none;
+}
+
+.dropdown-item {
+    margin-top: 0.1em;
+    padding: 0.10em;
+    border-top: 1px solid #F4F4F4;
+}

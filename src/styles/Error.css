@@ -1,0 +1,9 @@
+.error-content {
+    color: red;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+
+.error-content .fa-exclamation {
+    margin-right: 0.4em;
+}

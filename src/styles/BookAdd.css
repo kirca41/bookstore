@@ -1,0 +1,124 @@
+.book-add {
+    display: grid;
+    grid-template-columns: 45% 45%;  
+    grid-column-gap: 5%; 
+    padding: 5%; 
+    margin-left: 3em;
+}
+
+input[type="file"] {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+label[for="cover"] > span b {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #579141;
+    border-radius: 50%;
+    color: #579141;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -1.5em;
+    margin-right: 0.6em;
+}
+
+label[for="cover"] {
+    cursor: pointer;
+}
+
+.book-add-field label {
+    display: block;
+}
+
+#description {
+    resize: none;
+    height: auto;
+    color: #9ABF75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+#description:focus {
+    font-size: 1.25em;
+    color: #629D2A;
+}
+
+.book-add-field {
+    margin: 2.2em 0;
+}
+
+.book-add-field label {
+    text-transform: uppercase;
+    color: #629D2A;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.book-add input, .book-add textarea {
+    border: none;
+    border-bottom: 2px solid #AABFBB;
+    background-color: transparent;
+    width: 90%;
+    transition: border-bottom-color 0.3s linear;
+}
+
+.book-add input:focus, .book-add textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #579141;
+}
+
+.add-submit-btn {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: 2em;
+    border-radius: 0.2em;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: bold;
+    background-image: linear-gradient(to right, #579141, #629D2A, #9ABF75);
+    color: #F4F4F4;
+}
+
+.add-submit-btn:hover {
+    cursor: pointer;
+}
+
+.book-add-field input {
+    color: #9ABF75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.book-add-field input:focus {
+    font-size: 1.25em;
+    color: #629D2A;
+}
+
+#bookadd-dropdown {
+    position: relative;
+}
+
+#dropdown-container {
+    position: absolute;
+    width: 60%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.error input, .error textarea {
+    border-bottom: 2px solid red;
+}

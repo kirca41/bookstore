@@ -1,0 +1,113 @@
+.search-book {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 35%;
+    position: relative;
+}
+.search-book .fa-search {
+    font-size: 1.3em;
+    margin-top: 0.75em;
+    color: #579141;
+    padding-right: 0.2em;
+    margin-right: 2%;
+}
+
+.fas.fa-search:hover {
+    cursor: pointer;
+}
+
+.search-book input:focus {
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-book input {
+    font-family: 'Montserrat', sans-serif;
+    color: #4A4A4A;
+    height: 1.5em;
+    margin-top: 1.1em;
+    appearance: none;
+    border: none;
+    border-bottom: 2px solid #579141;
+    margin-right: 2%;
+}
+
+.search-book input::placeholder {
+    color: #579141;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0.2em;
+}
+
+.logo {
+    width: 50px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: .15em solid rgba(170, 191, 187, 0.8);
+    padding: .3em 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-item {
+    margin: auto 0px;
+    font-weight: 600;
+    color: #579141;
+}
+
+.header-item:hover {
+    cursor: pointer;
+    color: #9ABF75;
+}
+
+a:link, a:visited {
+    color: #579141;
+}
+
+a:hover {
+    color: #9ABF75;
+}
+
+.fas.fa-shopping-cart {
+    font-size: 1.5em;
+    color: #579141;
+}
+
+.fa-shopping-cart:hover {
+    color: #9ABF75;
+}
+
+#header-dropdown {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 19em);
+    width: auto;
+    z-index: 1;
+}
+
+.header-cart {
+    position: relative;
+    padding: 0.3em;
+}
+
+.header-cart:hover .cart-dot {
+    background-color: rgb(255, 78, 78);
+}
+
+.cart-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.2em 0.2em 0.1em 0.2em;
+    font-size: 0.8em;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}

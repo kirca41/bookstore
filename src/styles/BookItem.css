@@ -1,0 +1,189 @@
+.book-list {
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #F4F4F4;
+    background-size: 100vh;
+    position: relative;
+}
+
+.book-list-dropdown {
+    position: absolute;
+    right: 7%;
+    top: 0.1%;
+    width: 13%;
+    z-index: 1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    margin: 2% 3% 0% 5%;
+    height: fit-content;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.4);
+}
+
+.card-container {
+    width: 90%;
+    height: 90%;
+    padding: 9% 3%;
+    margin: 0 auto;
+}
+
+.card-container img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    cursor: pointer;
+}
+
+.card-content {
+    width: 100%;
+    text-align: center;
+}
+
+.card-field {
+    margin: 0.5em 0 0 0;
+}
+
+.card-title {
+    color: #579141;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 246px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-author {
+    color: #629D2A;
+}
+
+.card-price {
+    color: #4A4A4A;
+}
+
+.lds-dual-ring {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid #579141;
+    border-color: #579141 transparent #579141 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.loader-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.card-buttons {
+    width: 90%;
+    margin: 0 2% 0.5em 2%;  
+    padding: 2% 0;
+}
+
+.card-buttons .remove-btn {
+    margin: 0% 3%;
+}
+
+.card-img-container {
+    position: relative;
+}
+
+.card-img-container .card-add-btn {
+    position: absolute;
+    bottom: 0;
+    right: 12.5%;
+    background-color: white;
+    color: #579141;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 0.1em 0.8em 0.2em 0.8em;
+    border-top: 2px solid #AABFBB;
+    border-left: 2px solid #AABFBB;
+    border-top-left-radius: 0.4em;
+    display: none;
+}
+
+.card-add-btn .fas.fa-shopping-cart {
+    font-size: 1.5em;
+    margin-left: 0.1em;
+    color: #579141;
+}
+
+.card-img-container img:hover + .card-add-btn {
+    display: block;
+}
+
+.card-add-btn:hover {
+    display: block;
+    cursor: pointer;
+    color: #9ABF75;
+    border-top: 2px solid #579141;
+    border-left: 2px solid #579141;
+}
+
+.card-add-btn:hover .fas.fa-shopping-cart {
+    color: #9ABF75;
+}
+
+.search-error {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.search-error div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.search-error div span:first-child {
+    color: #579141;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-error div span:last-child {
+    color: #4A4A4A;
+    font-size: 1.4em;
+    font-weight: 600;
+}

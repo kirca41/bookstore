@@ -1,0 +1,147 @@
+.book-details {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F4F4;
+    margin-top: 3.5%;
+}
+
+.book-details-header {
+    padding: 2% 5%;
+}
+
+.book-details-header span {
+    color: #579141;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.book-details-header i {
+    color: #629D2A;
+}
+
+.book-details-header div {
+    margin: 0.2em 0 0 0;
+    color: #4A4A4A;
+}
+
+.book-details-content {
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+
+.book-details-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.book-details-ul li span {
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quantity button {
+    width: 30%;
+    height: 1.5em;
+    border-radius: 0.4em;
+    font-size: 1.2em;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: bold;
+    background-image: linear-gradient(to right, #579141, #629D2A, #9ABF75);
+    color: #F4F4F4;
+}
+
+.quantity button:hover {
+    cursor: pointer;
+}
+
+.back-btn {
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    color: #4A4A4A;
+    background-color: transparent;
+    border: 2px solid #AABFBB;
+    border-radius: 0.3em;
+}
+
+.back-btn:hover {
+    cursor: pointer;
+    /* box-shadow: 0 0.1em 0.2em 0.1em rgba(195,192,192,.9); */
+}
+
+.quantity {
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+.quantity-input {
+    margin-left: 5%;
+    border: none;
+    border: 2px solid #AABFBB;
+    width: 10%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.quantity-input:focus {
+    outline: none;
+}
+
+.book-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.book-details-info div:first-child {
+    text-align: justify;
+}
+
+.fas.fa-pencil-alt, .fas.fa-trash {
+    float: right;
+}
+
+.remove-btn {
+    float: right;
+    background-color: transparent;
+    color: #4A4A4A;
+    padding: 1% 2%;
+    width: 5.5em;
+    border: 2px solid #D71601;
+    border-radius: 0.3em;
+    margin-left: 3%;
+}
+
+.remove-btn:hover {
+    background-color: #D71601;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn {
+    float: right;
+    background-color: transparent;
+    color: #4A4A4A;
+    padding: 1%;
+    width: 5em;
+    border: 2px solid #629D2A;
+    border-radius: 0.3em;
+    margin-right: em;
+}
+
+.edit-btn:hover {
+    background-color: #629D2A;
+    color: white;
+    cursor: pointer;
+}
+
